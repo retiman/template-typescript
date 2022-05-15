@@ -1,5 +1,5 @@
 {
-  "extends": "./typescript/tsconfig.base.json",
+  "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
     "target": "es2015",
     "module": "commonjs",
