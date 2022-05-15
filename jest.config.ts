@@ -13,6 +13,6 @@ export default async (): Promise<Config.InitialOptions> => {
     ],
     testTimeout: 10000,
     testMatch: ['**/*.test.ts'],
-    verbose: true,
-  };
-};
+    verbose: true
+  }
+}

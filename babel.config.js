@@ -9,6 +9,6 @@ module.exports = {
       }
     ],
     // See https://jestjs.io/docs/getting-started#using-typescript
-    '@babel/preset-typescript',
-  ],
-};
+    '@babel/preset-typescript'
+  ]
+}
