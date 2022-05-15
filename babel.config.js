@@ -1,4 +1,3 @@
-// See
 module.exports = {
   presets: [
     [
@@ -9,6 +8,7 @@ module.exports = {
         }
       }
     ],
+    // See https://jestjs.io/docs/getting-started#using-typescript
     '@babel/preset-typescript',
   ],
 };
