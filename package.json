@@ -14,10 +14,11 @@
     "url": "https://github.com/retiman/template-typescript-repository/issues"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --declaration",
+    "clean": "rm -rf coverage dist",
     "test": "jest"
   },
-  "main": "index.js",
+  "main": "dist/src/index.js",
   "files": [
     "dist/*.ts",
     "!dist/*.test.ts"
