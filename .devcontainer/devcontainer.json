@@ -23,6 +23,6 @@
   ],
   "remoteUser": "node",
   "features": {
-    "git": "latest"
+    "git": "2.20.1"
   }
 }
