@@ -1,0 +1,18 @@
+{
+  // See https://github.com/tsconfig/bases/blob/main/bases/recommended.json
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2015",
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "jest.config.ts"
+  ]
+}
