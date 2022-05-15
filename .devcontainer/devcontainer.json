@@ -13,8 +13,6 @@
     "EditorConfig.EditorConfig",
     "Orta.vscode-jest",
     "Tyriar.windows-terminal",
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
     "medo64.render-crlf",
     "ms-vscode.vscode-typescript-next"
   ],

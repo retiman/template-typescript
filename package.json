@@ -17,8 +17,9 @@
     "build": "tsc --declaration",
     "clean": "rm -rf coverage dist *.tgz",
     "format": "prettier --write **/*.ts",
-    "lint": "eslint **/*.ts",
-    "test": "jest"
+    "lint": "eslint --fix **/*.ts",
+    "test": "jest",
+    "all": "npm run clean && npm run format && npm run lint && npm run build && npm run test"
   },
   "main": "dist/src/index.js",
   "files": [
@@ -38,7 +39,9 @@
     "eslint": "^8.15.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.2.2",
     "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "jest": "^28.1.0",
     "prettier": "^2.6.2",
