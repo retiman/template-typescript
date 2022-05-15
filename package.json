@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "tsc --declaration",
-    "clean": "rm -rf coverage dist",
+    "clean": "rm -rf coverage dist *.tgz",
     "test": "jest"
   },
   "main": "dist/src/index.js",
