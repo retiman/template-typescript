@@ -21,6 +21,9 @@
   "mounts": [
     "source=node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
   ],
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:${containerWorkspaceFolder}/node_modules/.bin"
+  },
   "remoteUser": "node",
   "features": {
     "git": "2.20.1"
