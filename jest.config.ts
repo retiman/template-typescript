@@ -15,4 +15,4 @@ export default async (): Promise<Config.InitialOptions> => {
     testMatch: ['**/*.test.ts'],
     verbose: true
   }
-}
+};

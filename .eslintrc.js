@@ -13,8 +13,19 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'jest',
+    'prettier'
   ],
   rules: {
+    'no-continue': 'off',
+    'no-use-before-define': 'off'
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.ts']
+      }
+    }
   }
 }
