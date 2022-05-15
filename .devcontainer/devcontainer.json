@@ -6,12 +6,20 @@
       "VARIANT": "18-buster"
     }
   },
-  "settings": {},
+  "settings": {
+
+  },
   "extensions": [
-    "dbaeumer.vscode-eslint"
+    "EditorConfig.EditorConfig",
+    "Orta.vscode-jest",
+    "Tyriar.windows-terminal",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "medo64.render-crlf",
+    "ms-vscode.vscode-typescript-next"
   ],
   "mounts": [
-  	"source=node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+    "source=node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
   ],
   "remoteUser": "node",
   "features": {

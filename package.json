@@ -1,0 +1,21 @@
+{
+  "name": "template-typescript-repository",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Min Huang",
+  "description": "Template typescript repository",
+  "homepage": "https://github.com/retiman/template-typescript-repository#README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/retiman/template-typescript-repository.git"
+  },
+  "bugs": {
+    "url": "https://github.com/retiman/template-typescript-repository/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {}
+}
