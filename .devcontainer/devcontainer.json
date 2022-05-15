@@ -1,17 +1,20 @@
 {
-	"name": "Typescript",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			"VARIANT": "18-buster"
-		}
-	},
-	"settings": {},
-	"extensions": [
-		"dbaeumer.vscode-eslint"
-	],
-	"remoteUser": "node",
-	"features": {
-		"git": "latest"
-	}
+  "name": "Typescript",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "18-buster"
+    }
+  },
+  "settings": {},
+  "extensions": [
+    "dbaeumer.vscode-eslint"
+  ],
+  "mounts": [
+  	"source=node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
+  "remoteUser": "node",
+  "features": {
+    "git": "latest"
+  }
 }
