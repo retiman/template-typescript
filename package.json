@@ -16,6 +16,7 @@
   "scripts": {
     "build": "tsc --declaration",
     "clean": "rm -rf coverage dist *.tgz",
+    "format": "prettier --write **/*.ts",
     "test": "jest"
   },
   "main": "dist/src/index.js",
