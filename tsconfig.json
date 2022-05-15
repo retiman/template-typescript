@@ -1,8 +1,17 @@
 {
+  // See https://github.com/tsconfig/bases/blob/main/bases/recommended.json
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "target": "es2015",
+    "baseUrl": ".",
     "module": "commonjs",
-    "outDir": "./dist"
-  }
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2015",
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }
