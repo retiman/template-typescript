@@ -18,7 +18,6 @@ module.exports = {
     'prettier'
   ],
   rules: {
-    '@typescript-eslint/explicit-function-return-type': 'on',
     'no-continue': 'off',
     'no-use-before-define': 'off',
     'semi': [2, 'always']
