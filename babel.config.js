@@ -4,11 +4,11 @@ module.exports = {
       '@babel/preset-env',
       {
         targets: {
-          node: 'current'
-        }
-      }
+          node: 'current',
+        },
+      },
     ],
     // See https://jestjs.io/docs/getting-started#using-typescript
-    '@babel/preset-typescript'
-  ]
-}
+    '@babel/preset-typescript',
+  ],
+};

@@ -6,9 +6,7 @@
       "VARIANT": "18-buster"
     }
   },
-  "settings": {
-
-  },
+  "settings": {},
   "extensions": [
     "EditorConfig.EditorConfig",
     "Orta.vscode-jest",
@@ -16,9 +14,7 @@
     "medo64.render-crlf",
     "ms-vscode.vscode-typescript-next"
   ],
-  "mounts": [
-    "source=node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
-  ],
+  "mounts": ["source=node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"],
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:${containerWorkspaceFolder}/node_modules/.bin"
   },
