@@ -19,7 +19,7 @@
     "fix": "npm run lint:fix && npm run format:fix",
     "format": "prettier --check **/*",
     "format:fix": "prettier --write **/*",
-    "lint": "eslint **/*",
+    "lint": "eslint --ext .ts,.js,.mjs .",
     "lint:fix": "eslint --fix **/*",
     "postbuild": "node scripts/postbuild.mjs",
     "test": "npm run test:unit",

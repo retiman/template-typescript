@@ -5,6 +5,7 @@ node_modules/
 *.sh
 .editorconfig
 .env
+.eslintignore
 .gitattributes
 .gitignore
 .prettierignore
