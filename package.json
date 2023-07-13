@@ -16,8 +16,11 @@
   "scripts": {
     "build": "tsc --declaration",
     "clean": "node scripts/clean.mjs",
-    "format": "prettier --write **/*.ts",
-    "lint": "eslint --fix **/*.ts",
+    "fix": "npm run lint:fix && npm run format:fix",
+    "format": "prettier **/*",
+    "format:fix": "prettier --write **/*",
+    "lint": "eslint **/*",
+    "lint:fix": "eslint --fix **/*",
     "test": "jest",
     "all": "npm run clean && npm run format && npm run lint && npm run build && npm run test"
   },
