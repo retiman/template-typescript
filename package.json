@@ -23,7 +23,7 @@
     "lint:fix": "eslint --fix **/*",
     "postbuild": "node scripts/postbuild.mjs",
     "test": "npm run test:unit",
-    "test:unit": "jest --config test/unit/jest.config.mjs",
+    "test:unit": "jest --config test/unit/jest.config.js",
     "test:integration": "jest --config test/integration/jest.config.mjs",
     "all": "npm run clean && npm run fix && npm run build && npm run test"
   },
