@@ -22,14 +22,16 @@
     "lint": "eslint **/*",
     "lint:fix": "eslint --fix **/*",
     "postbuild": "node scripts/postbuild.mjs",
-    "test": "jest",
-    "all": "npm run clean && npm run format && npm run lint && npm run build && npm run test"
+    "test": "npm run test:unit",
+    "test:unit": "jest --config test/unit/jest.config.mjs",
+    "test:integration": "jest --config test/integration/jest.config.mjs",
+    "all": "npm run clean && npm run fix && npm run build && npm run test"
   },
-  "main": "dist/src/index.js",
-  "files": [
-    "dist/*.ts",
-    "!dist/*.test.ts"
-  ],
+  "main": "dist/index.js",
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-typescript": "^7.16.7",
