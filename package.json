@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "tsc --declaration",
-    "clean": "rm -rf coverage dist *.tgz",
+    "clean": "node scripts/clean.mjs",
     "format": "prettier --write **/*.ts",
     "lint": "eslint --fix **/*.ts",
     "test": "jest",
@@ -43,6 +43,7 @@
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "fs-extra": "^11.1.1",
     "jest": "^28.1.0",
     "prettier": "^2.6.2",
     "ts-node": "^10.7.0",
