@@ -16,19 +16,23 @@ module.exports = {
     '@typescript-eslint/comma-dangle': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/member-delimiter-style': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/semi': 'off',
-    '@typescript-eslint/space-before-function-paren': ['error', {
-      anonymous: 'always',
-      named: 'never',
-      asyncArrow: 'always'
-    }],
+    '@typescript-eslint/space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always',
+      },
+    ],
   },
   settings: {
     'import/resolver': {
       node: {
         extensions: ['.ts'],
-        moduleDirectory: ['node_modules', 'src', 'test/shared', 'test/unit', 'test/integration']
+        moduleDirectory: ['node_modules', 'src', 'test/shared', 'test/unit', 'test/integration'],
       },
     },
   },
-}
+};

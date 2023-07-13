@@ -1,4 +1,4 @@
-const _ = require('../shared/jest.setup');
+require('../shared/jest.setup');
 const fs = require('fs');
 
 if (!fs.existsSync('.env')) {

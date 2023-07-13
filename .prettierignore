@@ -2,12 +2,12 @@ build/
 dist/
 node_modules/
 
-*.sh
-.editorconfig
-.env
-.eslintignore
-.gitattributes
-.gitignore
-.prettierignore
-Dockerfile
+# Ignore all the dotfiles in the repository root.
+*.*
 LICENSE
+
+# Unless they are a certain file type or explicitly included.
+package.json
+tsconfig.json
+!*.js
+!*.mjs
