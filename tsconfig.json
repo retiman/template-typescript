@@ -21,7 +21,9 @@
     "outDir": "./build",
     "sourceMap": true,
     "strict": true,
-    "target": "es2017"
+    "target": "es2017",
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node", "@types/jest"]
   },
   "include": ["script", "src", "test", ".eslintrc.js"],
   "exclude": ["dist", "node_modules"]
