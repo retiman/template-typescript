@@ -23,8 +23,9 @@
     "lint:fix": "eslint --ext .js,.ts --fix .",
     "postbuild": "node script/postbuild.js",
     "test": "npm run test:unit",
-    "test:unit": "jest --config test/unit/jest.config.js",
-    "test:integration": "jest --config test/integration/jest.config.js",
+    "test:unit": "jest --collectCoverage --coverageDirectory coverage --config test/unit/jest.config.js",
+    "test:integration": "jest --collectCoverage --coverageDirectory coverage --config test/integration/jest.config.js",
+    "test:all": "npm run test:unit && npm run test:integration",
     "all": "npm run clean && npm run fix && npm run build && npm run test"
   },
   "main": "dist/index.js",
