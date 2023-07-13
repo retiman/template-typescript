@@ -2,5 +2,6 @@ const _ = require('../shared/jest.setup');
 const fs = require('fs');
 
 if (!fs.existsSync('.env')) {
-  throw new Error('Create a .env file in the project root directory (use env.sample as an example).');
+  fs.copyFileSync('.env.sample', '.env');
+  throw new Error('No .env file exists.  A sample file has been created for you; please fill in the details.');
 }
