@@ -14,7 +14,7 @@
     "url": "https://github.com/retiman/template-typescript-repository/issues"
   },
   "scripts": {
-    "build": "tsc --declaration",
+    "build": "tsc",
     "clean": "node script/clean.js",
     "fix": "npm run lint:fix && npm run format:fix",
     "format": "prettier --check **/*",
@@ -32,12 +32,16 @@
     "src": "src",
     "test": "test"
   },
+  "peerDependencies": {
+    "winston": "^3.10.0"
+  },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
     "@types/jest": "^27.5.1",
     "@types/node": "^17.0.33",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.23.0",
+    "colors": "^1.4.0",
     "dotenv": "^16.0.1",
     "editorconfig": "^2.0.0",
     "eslint": "^8.15.0",
