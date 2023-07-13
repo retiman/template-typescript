@@ -1,5 +1,5 @@
-import * as fse from 'fs-extra';
-import * as path from 'path';
+const fse = require('fs-extra');
+const path = require('path');
 
 // The tsc compiler doesn't do any advanced file manipulation as part of the compilation process, and it likely never
 // will.  If we want tests omitted from being packed, we have to do it ourselves.
