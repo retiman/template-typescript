@@ -10,6 +10,8 @@
     // imports would point to locations that don't exist.
     //
     // See https://www.typescriptlang.org/tsconfig#baseUrl
+    // See https://github.com/microsoft/TypeScript/issues/16640
+    // See https://stackoverflow.com/questions/56949487/how-to-have-absolute-import-paths-in-a-library-project
     // "baseUrl": "."
     "declaration": true,
     "declarationMap": true,
