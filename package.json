@@ -17,7 +17,7 @@
     "build": "tsc --declaration",
     "clean": "node scripts/clean.mjs",
     "fix": "npm run lint:fix && npm run format:fix",
-    "format": "prettier **/*",
+    "format": "prettier --check **/*",
     "format:fix": "prettier --write **/*",
     "lint": "eslint **/*",
     "lint:fix": "eslint --fix **/*",

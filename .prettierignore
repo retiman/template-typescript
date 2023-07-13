@@ -1,2 +1,11 @@
+build/
 dist/
 node_modules/
+
+*.sh
+.editorconfig
+.gitattributes
+.gitignore
+.prettierignore
+Dockerfile
+LICENSE
