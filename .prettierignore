@@ -12,3 +12,4 @@ package.json
 tsconfig.json
 !*.js
 !*.mjs
+!*.ts
