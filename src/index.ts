@@ -1,9 +1,3 @@
-export const HELLO_WORLD = 'Hello World!';
-
-export function foo() {
-  return HELLO_WORLD;
-}
-
 // Test for @typescript-eslint/no-unused-vars.
 //
 // Any variable with _ should be exempted from being detected as an unused var.

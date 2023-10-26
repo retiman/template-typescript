@@ -14,7 +14,7 @@ module.exports = {
   rules: {
     // Enabled because one should not assign the result of a void function.
     //
-    // See https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-confusing-void-expression.md
+    // See https://typescript-eslint.io/rules/no-confusing-void-expression/
     '@typescript-eslint/no-confusing-void-expression': 'error',
     '@typescript-eslint/no-unused-vars': [
       'error',
@@ -25,6 +25,16 @@ module.exports = {
         varsIgnorePattern: '^_'
       }
     ],
+    // Disabled because there's no reason to enable this except to be pedantic.  Code organization desires may dictate
+    // that methods not using this should still be methods.  For example, there are situations where it's desirable to
+    // define only instance methods for ease of use, or you would prefer that the caller not have to know or care that
+    // a method actually uses instance variables or not.
+    //
+    // In other situations, nothing is stopping you from declaring a function outside of a class, which is functionally
+    // the same as a static method.
+    //
+    // See https://eslint.org/docs/latest/rules/class-methods-use-this
+    'class-methods-use-this': 'off',
     // Disabled because this rule cannot detect if a dependency is only for development.  For example, if you have a
     // postbuild.js and you include it in tsconfig.json, then this plugin will incorrectly assume that any packages
     // required there should be in dependencies.
