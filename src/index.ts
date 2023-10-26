@@ -8,3 +8,10 @@ export function eslintNoUnusedVars(_: string) {
     // eslint-disable-next-line no-empty
   }
 }
+
+// Test for eslint/no-continue and eslint/no-plusplus
+export function eslintNoContinue() {
+  for (let i = 0; i < 10; i ++) {
+    continue;
+  }
+}

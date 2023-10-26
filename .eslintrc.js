@@ -50,6 +50,29 @@ module.exports = {
     // See https://github.com/airbnb/javascript/issues/1365
     // See https://blog.neufund.org/why-we-have-banned-default-exports-and-you-should-do-the-same-d51fdc2cf2ad
     'import/prefer-default-export': 'off',
+    // Disabled because continue ESLint specifically is concerned about continue being used with labels.  Using this
+    // with labels is akin to a goto statement, which makes code hard to reason about.  Proper use of the continue
+    // statement makes code easier to read.
+    //
+    // The ESLint recommendations around avoiding continue involve using if statements, which do actively degrade code
+    // readability.  ESLint, for whatever reason, recommends this even when labels are not required.  Good readability,
+    // in contrast, would call for using continue statements with guard clauses.
+    //
+    // See https://eslint.org/docs/latest/rules/no-continue
+    // See https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html
+    'no-continue': 'off',
+    // Disabled because this is convenient in for loops.  Generally it is disabled because automatic semicolon insertion
+    // can inadvertently change semantics.
+    //
+    // TODO: Investigate if this is still problematic if prettier inserts semicolons after linting.
+    //
+    // See https://eslint.org/docs/latest/rules/no-plusplus
+    'no-plusplus': [
+      'error',
+      {
+        'allowForLoopAfterthoughts': true
+      }
+    ],
     // Disabled because we do want to have underscore prefixed identifiers to indicate a variable is ignored.
     //
     // See https://eslint.org/docs/latest/rules/no-underscore-dangle
