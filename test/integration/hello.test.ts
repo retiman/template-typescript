@@ -1,11 +1,10 @@
-import { foo } from '../../src';
-import { bar } from '../shared/hello';
+import { hello } from '../../src/hello';
 import { logger } from '../shared/logger';
 
 describe('hello integration', () => {
-  test.concurrent('hello', async () => {
+  test('hello', async () => {
     logger.info('We are testing hello in an integration test');
 
-    expect(foo()).toBe(bar());
+    expect(hello()).toBe('Hello World!');
   });
 });
