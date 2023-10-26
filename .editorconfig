@@ -1,3 +1,8 @@
+# Do not enable the VSCode EditorConfig plugin; the prettier plugin will automatically format code for you anyways, and
+# the VSCode plugin will move your cursor unexpectedly when formatting files as you edit.  It's a bug that hasn't been
+# fixed for a long time.
+#
+# https://github.com/editorconfig/editorconfig-vscode/issues/40
 root = true
 
 [*]
@@ -5,10 +10,5 @@ charset = utf-8
 end_of_line = lf
 indent_size = 2
 indent_style = space
-# Setting this to true makes VSCode break typing flow. The following ticket mentions that Intellisense dropdowns
-# disappear, and that is presumably fixed.  However, if you aren't, then the cursor still jumps and typing flow is still
-# broken.
-#
-# See https://github.com/editorconfig/editorconfig-vscode/issues/40
-# insert_final_newline = true
+insert_final_newline = true
 trim_trailing_whitespace = true
