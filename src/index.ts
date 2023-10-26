@@ -15,3 +15,10 @@ export function eslintNoContinue() {
     continue;
   }
 }
+
+// Test for prettier/trailingComma
+export const prettierTrailingComma = {
+  foo: 1,
+  bar: 2,
+  baz: 3,
+};
