@@ -23,7 +23,7 @@
     "strict": true,
     "target": "es2017",
     "typeRoots": ["node_modules/@types"],
-    "types": ["node", "@types/jest"]
+    "types": ["jest", "node"]
   },
   // For some reason, @typescript-eslint/parser will check the files you ask to lint against files included in the
   // project here.  Why does it do that?  I don't know.  However, if you want source files linted, they must appear
