@@ -1,6 +1,5 @@
 export class Foo {
-  constructor(private readonly x: number) {
-  }
+  constructor(private readonly x: number) {}
 
   public getX() {
     return this.x;

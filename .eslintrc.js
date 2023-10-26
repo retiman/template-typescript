@@ -5,7 +5,7 @@ module.exports = {
     // Disables rules that are handled by prettier already.
     //
     // See https://github.com/prettier/eslint-config-prettier
-    'prettier'
+    'prettier',
   ],
   parserOptions: {
     project: './tsconfig.json',
@@ -22,8 +22,8 @@ module.exports = {
         args: 'all',
         argsIgnorePattern: '^_',
         vars: 'all',
-        varsIgnorePattern: '^_'
-      }
+        varsIgnorePattern: '^_',
+      },
     ],
     // Disabled because there's no reason to enable this except to be pedantic.  Code organization desires may dictate
     // that methods not using this should still be methods.  For example, there are situations where it's desirable to
@@ -70,18 +70,13 @@ module.exports = {
     'no-plusplus': [
       'error',
       {
-        'allowForLoopAfterthoughts': true
-      }
+        allowForLoopAfterthoughts: true,
+      },
     ],
     // Disabled because we do want to have underscore prefixed identifiers to indicate a variable is ignored.
     //
     // See https://eslint.org/docs/latest/rules/no-underscore-dangle
-    'no-underscore-dangle': 'off'
+    'no-underscore-dangle': 'off',
   },
-  ignorePatterns: [
-    "build",
-    "coverage",
-    "dist",
-    "node_modules"
-  ]
+  ignorePatterns: ['build', 'coverage', 'dist', 'node_modules'],
 };

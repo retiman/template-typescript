@@ -11,7 +11,7 @@ export function eslintNoUnusedVars(_: string) {
 
 // Test for eslint/no-continue and eslint/no-plusplus
 export function eslintNoContinue() {
-  for (let i = 0; i < 10; i ++) {
+  for (let i = 0; i < 10; i++) {
     continue;
   }
 }
