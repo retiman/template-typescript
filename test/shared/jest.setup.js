@@ -1,3 +1,4 @@
+const _ = require('reflect-metadata');
 const colors = require('colors');
 const dotenv = require('dotenv');
 const winston = require('winston');
