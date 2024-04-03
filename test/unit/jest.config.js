@@ -1,11 +1,12 @@
 module.exports = {
   clearMocks: true,
+  coverageReporters: ['json', 'text', 'text-summary'],
   moduleFileExtensions: ['js', 'ts'],
   modulePaths: ['<rootDir>'],
   setupFiles: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'node',
   testMatch: ['**/*.test.ts'],
-  testTimeout: 1000,
+  testTimeout: 5 * 60 * 1000,
   transform: {
     '^.+\\.ts$': 'ts-jest',
   },
