@@ -36,6 +36,9 @@
   "peerDependencies": {
     "@typescript-eslint/parser": "^6.9.0",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "axios": "^1.6.8",
+    "tsyringe": "^4.8.0",
+    "reflect-metadata": "^0.2.2",
     "winston": "^3.10.0"
   },
   "devDependencies": {
