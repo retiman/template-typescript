@@ -4,4 +4,4 @@ const path = require('path');
 fse.emptyDirSync('build');
 fse.emptyDirSync('dist');
 fse.emptyDirSync(path.join('test', 'unit', 'coverage'));
-fse.emptyDirSync(path.join('test', 'unit', 'integration'));
+fse.emptyDirSync(path.join('test', 'integration', 'coverage'));
