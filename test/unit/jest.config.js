@@ -1,6 +1,5 @@
 module.exports = {
   clearMocks: true,
-  coverageReporters: ['json', 'text', 'text-summary'],
   moduleFileExtensions: ['js', 'ts'],
   modulePaths: ['<rootDir>'],
   setupFiles: ['<rootDir>/jest.setup.js'],
