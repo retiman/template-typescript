@@ -1,11 +1,9 @@
-export class Foo {
-  constructor(private readonly x: number) {}
+export interface Foo {
+  getFoo(): number;
+}
 
-  public getX() {
-    return this.x;
-  }
-
-  public getY() {
+export class RealFoo implements Foo {
+  public getFoo() {
     return 10;
   }
 }

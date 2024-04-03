@@ -1,10 +1,11 @@
+const _ = require('reflect-metadata');
 const colors = require('colors');
 const dotenv = require('dotenv');
 const winston = require('winston');
 
 dotenv.config({ override: true });
 
-winston.loggers.add('template-typescript-repository', {
+winston.loggers.add('template-typescript', {
   silent: false,
   transports: [
     new winston.transports.Console({

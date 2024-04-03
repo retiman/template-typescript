@@ -12,6 +12,23 @@ module.exports = {
   },
   plugins: ['jest'],
   rules: {
+    // Permits the violation of naming conventions for unused variables with a leading underscore.
+    //
+    // See https://typescript-eslint.io/rules/naming-convention/
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'variable',
+        format: ['camelCase', 'PascalCase', 'snake_case'],
+        leadingUnderscore: 'allow',
+        modifiers: ['unused'],
+      },
+      {
+        selector: 'parameter',
+        format: ['camelCase', 'PascalCase', 'snake_case'],
+        leadingUnderscore: 'allow',
+      },
+    ],
     // Enabled because one should not assign the result of a void function.
     //
     // See https://typescript-eslint.io/rules/no-confusing-void-expression/
