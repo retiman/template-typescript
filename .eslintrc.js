@@ -36,12 +36,12 @@ module.exports = {
     // See https://typescript-eslint.io/rules/no-confusing-void-expression/
     '@typescript-eslint/no-confusing-void-expression': 'error',
     '@typescript-eslint/no-meaningless-void-operator': 'error',
+    // Enabled because no-shadow reports spurious errors in TypeScript sometimes.
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-unused-expressions': 'error',
-    // Disabled because the unused-imports plugin is handling this rule.
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
-    '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     // Disabled because there's no reason to enable this except to be pedantic.  Code organization desires may dictate
     // that methods not using this should still be methods.  For example, there are situations where it's desirable to
@@ -68,6 +68,7 @@ module.exports = {
     // See https://github.com/airbnb/javascript/issues/1365
     // See https://blog.neufund.org/why-we-have-banned-default-exports-and-you-should-do-the-same-d51fdc2cf2ad
     'import/prefer-default-export': 'off',
+    'jest/no-disabled-tests': 'off',
     // Disabled because continue ESLint specifically is concerned about continue being used with labels.  Using this
     // with labels is akin to a goto statement, which makes code hard to reason about.  Proper use of the continue
     // statement makes code easier to read.
@@ -79,6 +80,8 @@ module.exports = {
     // See https://eslint.org/docs/latest/rules/no-continue
     // See https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html
     'no-continue': 'off',
+    // Disabled because it is handled by @typescript-eslint rules.
+    'no-shadow': 'off',
     // Disabled for convenience.  Enable again if this ends up hurting the project.
     //
     // See https://eslint.org/docs/latest/rules/no-plusplus
@@ -102,6 +105,10 @@ module.exports = {
     //
     // See https://eslint.org/docs/latest/rules/no-underscore-dangle
     'no-underscore-dangle': 'off',
+    'no-unused-expressions': 'off',
+    'no-unused-vars': 'off',
+    'no-use-before-define': 'off',
+    'no-useless-constructor': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'error',
