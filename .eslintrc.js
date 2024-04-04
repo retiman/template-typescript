@@ -12,6 +12,8 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'jest', 'unused-imports'],
   rules: {
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     // Permits the violation of naming conventions for unused variables with a leading underscore.
     //
     // See https://typescript-eslint.io/rules/naming-convention/
@@ -33,8 +35,14 @@ module.exports = {
     //
     // See https://typescript-eslint.io/rules/no-confusing-void-expression/
     '@typescript-eslint/no-confusing-void-expression': 'error',
+    '@typescript-eslint/no-meaningless-void-operator': 'error',
+    '@typescript-eslint/no-shadow': 'error',
+    '@typescript-eslint/no-unused-expressions': 'error',
     // Disabled because the unused-imports plugin is handling this rule.
     '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-useless-constructor': 'error',
+    '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/no-var-requires': 'off',
     // Disabled because there's no reason to enable this except to be pedantic.  Code organization desires may dictate
     // that methods not using this should still be methods.  For example, there are situations where it's desirable to
     // define only instance methods for ease of use, or you would prefer that the caller not have to know or care that
@@ -71,16 +79,23 @@ module.exports = {
     // See https://eslint.org/docs/latest/rules/no-continue
     // See https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html
     'no-continue': 'off',
-    // Disabled because this is convenient in for loops.  Generally it is disabled because automatic semicolon insertion
-    // can inadvertently change semantics.
-    //
-    // TODO: Investigate if this is still problematic if prettier inserts semicolons after linting.
+    // Disabled for convenience.  Enable again if this ends up hurting the project.
     //
     // See https://eslint.org/docs/latest/rules/no-plusplus
-    'no-plusplus': [
+    'no-plusplus': 'off',
+    'no-restricted-syntax': [
       'error',
       {
-        allowForLoopAfterthoughts: true,
+        selector: 'ForInStatement',
+        message: 'for..in loops iterate over the prototype chain, which is virtually never what you want',
+      },
+      {
+        selector: 'LabeledStatement',
+        message: 'labels are a form of goto; using them makes code confusing and hard to maintain',
+      },
+      {
+        selector: 'WithStatement',
+        message: 'with is disallowed in strict mode because it makes code impossible to predict and optimize',
       },
     ],
     // Disabled because we do want to have underscore prefixed identifiers to indicate a variable is ignored.
