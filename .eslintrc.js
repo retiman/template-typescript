@@ -5,10 +5,10 @@ module.exports = {
     // Disables rules that are handled by prettier already.
     //
     // See https://github.com/prettier/eslint-config-prettier
-    'prettier',
+    'prettier'
   ],
   parserOptions: {
-    project: './tsconfig.json',
+    project: './tsconfig.json'
   },
   plugins: ['@typescript-eslint', 'jest', 'unused-imports'],
   rules: {
@@ -23,13 +23,13 @@ module.exports = {
         selector: 'variable',
         format: ['camelCase', 'PascalCase', 'snake_case'],
         leadingUnderscore: 'allow',
-        modifiers: ['unused'],
+        modifiers: ['unused']
       },
       {
         selector: 'parameter',
         format: ['camelCase', 'PascalCase', 'snake_case'],
-        leadingUnderscore: 'allow',
-      },
+        leadingUnderscore: 'allow'
+      }
     ],
     // Enabled because one should not assign the result of a void function.
     //
@@ -87,16 +87,16 @@ module.exports = {
       'error',
       {
         selector: 'ForInStatement',
-        message: 'for..in loops iterate over the prototype chain, which is virtually never what you want',
+        message: 'for..in loops iterate over the prototype chain, which is virtually never what you want'
       },
       {
         selector: 'LabeledStatement',
-        message: 'labels are a form of goto; using them makes code confusing and hard to maintain',
+        message: 'labels are a form of goto; using them makes code confusing and hard to maintain'
       },
       {
         selector: 'WithStatement',
-        message: 'with is disallowed in strict mode because it makes code impossible to predict and optimize',
-      },
+        message: 'with is disallowed in strict mode because it makes code impossible to predict and optimize'
+      }
     ],
     // Disabled because we do want to have underscore prefixed identifiers to indicate a variable is ignored.
     //
@@ -110,9 +110,9 @@ module.exports = {
         argsIgnorePattern: '^_',
         caughtErrorsIgnorePattern: '^_',
         vars: 'all',
-        varsIgnorePattern: '^_',
-      },
-    ],
+        varsIgnorePattern: '^_'
+      }
+    ]
   },
-  ignorePatterns: ['build', 'coverage', 'dist', 'node_modules'],
+  ignorePatterns: ['build', 'coverage', 'dist', 'node_modules']
 };

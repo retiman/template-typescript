@@ -20,5 +20,5 @@ export function eslintNoContinue() {
 export const prettierTrailingComma = {
   foo: 1,
   bar: 2,
-  baz: 3,
+  baz: 3
 };

@@ -15,8 +15,8 @@ winston.loggers.add('template-typescript', {
         winston.format.colorize(),
         winston.format.label({ label: 'ttsr' }),
         // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-        winston.format.printf(info => `[${colors.magenta(info.label)}] ${info.level} ${info.message}`),
-      ),
-    }),
-  ],
+        winston.format.printf(info => `[${colors.magenta(info.label)}] ${info.level} ${info.message}`)
+      )
+    })
+  ]
 });

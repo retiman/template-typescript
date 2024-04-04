@@ -12,5 +12,5 @@ module.exports = {
   // Prettier and ESLint will fight over trailing commas.  The latter has more options for configuring trailing commas,
   // so disable here and let ESLint do all the work.
   trailingComma: 'none',
-  useTabs: false,
+  useTabs: false
 };
