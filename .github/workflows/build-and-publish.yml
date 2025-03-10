@@ -1,7 +1,11 @@
-name: Build and Publish
+name: Build and Test
 
 on:
   pull_request:
+    paths-ignore:
+      - CODEOWNERS
+      - LICENSE
+      - README.md
   push:
     branches:
       - main

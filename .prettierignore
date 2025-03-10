@@ -2,14 +2,13 @@ build/
 coverage/
 dist/
 node_modules/
-
-# Ignore all the dotfiles in the repository root.
-*.*
+CODEOWNERS
 LICENSE
 
-# Unless they are a certain file type or explicitly included.
-package.json
-tsconfig.json
+# Ignore all the files in the repository root.
+*.*
+
+# Unless they are a certain file type or explicitly excluded.
 !*.js
 !*.mjs
 !*.ts

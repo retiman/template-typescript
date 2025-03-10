@@ -1,4 +1,3 @@
-/* eslint-disable-next-line max-classes-per-file */
 import * as util from 'util';
 import { GenericConstructor } from './types';
 
@@ -38,4 +37,3 @@ export function FixedSet<E>(BaseClass: GenericConstructor<Set<E>>) {
     }
   };
 }
-/* eslint-enable-next-line max-classes-per-file */
